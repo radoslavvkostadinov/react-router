@@ -12,14 +12,14 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import { Link } from 'react-router-dom';
 
 const pages = [
-    { title: 'Home', link: '/' },
-    { title: 'Pricing', link: '/pricing' },
-    { title: 'Login', link: '/login' },
-    { title: 'Register', link: '/register' }
+    { title: 'Home', path: '/' },
+    { title: 'Pricing', path: '/pricing' },
+    { title: 'Login', path: '/login' },
+    { title: 'Register', path: '/register' }
 ];
-
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 export default function Header() {
@@ -120,9 +120,10 @@ export default function Header() {
                         LOGO
                     </Typography>
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                        {pages.map(({ title, link }) => (
+                        {pages.map(({ title, path }) => (
                             <Button
-                                href={`${link}`}
+                                component={Link}
+                                to={path}
                                 key={title}
                                 onClick={handleCloseNavMenu}
                                 sx={{ my: 2, color: 'white', display: 'block' }}
