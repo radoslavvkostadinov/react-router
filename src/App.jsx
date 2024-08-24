@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import { AuthContextProvider } from "../contexts/AuthContext";
 import TodoList from "./components/TodoList";
+import CreateTodo from "./components/CreateTodo";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/todos" element={<TodoList />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/todos/add" element={<CreateTodo />} />
 
       </Routes>
 

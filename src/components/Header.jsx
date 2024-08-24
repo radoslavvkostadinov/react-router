@@ -20,7 +20,8 @@ const pages = [
     { title: 'Pricing', path: '/pricing' },
     { title: 'Todos', path: '/todos' },
     { title: 'Login', path: '/login', guestOnly: true },
-    { title: 'Register', path: '/register', guestOnly: true }
+    { title: 'Register', path: '/register', guestOnly: true },
+    { title: 'Add todo', path: '/todos/add'},
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
