@@ -7,7 +7,10 @@ export function useTodosQuery() {
         // key for caching
         queryKey: todosKeys.all(),
         queryFn: getTodos,
-        staleTime: 10000,
+        // staleTime: 5 * 60 * 1000,
+        retry: 0,
+        initialData: [],
+        // enabled:
     })
 
     return todosQuery;
