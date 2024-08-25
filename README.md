@@ -22,3 +22,10 @@
 
 2. Config eslint plugin
 3. Config react query
+4. Config react query devtools
+
+## React Workshop Agenda
+1. Check / Uncheck - Put Request,
+2. Details Page - Route Params Demo, Get One Query
+3. Delete Todo
+   
